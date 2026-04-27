@@ -132,6 +132,10 @@ string setAttrib(string name, double value)
   os<<name<<"=\""<<value<<"\" ";
   return os.str();
 }
+void SvgDrawer::clearDrawing()
+{
+  
+}
 
 string setAttrib(string name, string value)
 {

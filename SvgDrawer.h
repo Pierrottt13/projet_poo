@@ -26,32 +26,19 @@ class SvgDrawer
 
 public:
 
-  //! Constructor
   SvgDrawer(string htmlFile, int dWidth=400, int dHeight=400);
 
-  //! Set the drawing area size
   void setDrawingSize(int dWidth,int dHeight);
 
-  //! Get the stroke color
   string strokeColor() const
     {return strokeColor_;}
 
-  //! Set the stroke color
   void setStrokeColor(string sColor)
     {strokeColor_=sColor;}
 
-  //! Get the stroke width
   float strokeWidth() const
     {return strokeWidth_;}
 
-  //! Set the stroke width
-  void setStrokeWidth(float sWidth)
-    {strokeWidth_=sWidth;}
-
-
-  //! Set the fill color
-  void setFillColor(string fColor)
-    {fillColor_=fColor;}
 
   //! Call to start the drawing
   void beginDraw(string title);
@@ -62,6 +49,7 @@ public:
   //! Draw a line
   void drawLine(double x1,double y1,double x2,double y2);
 
+  void clearDrawing();
 
 string setAttrib(string name, double value);
 string setAttrib(string name, string value);

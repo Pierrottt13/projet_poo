@@ -8,6 +8,7 @@ class instruction {
 public:
     virtual void execute(Tortue& t) = 0; 
     virtual ~instruction() {} 
+    virtual void print() const;
 };
 
 
@@ -71,5 +72,4 @@ Commande(vector<instruction*> liste_instructions_ = {});
 void ajouter_instruction(instruction* instr);
 void reset();
 void execute(Tortue& t);
-void print() const;
 };

@@ -50,7 +50,7 @@ void SvgDrawer::emptyTag(string tagName,string attributes)
   htmlStream_<<'<'<<tagName<<' '<<attributes<<"/>"<<endl;
 }
 
-string SvgDrawer::setAttribStyle() const
+string SvgDrawer::setAttribStyle() 
 {
   ostringstream os;
   os<<"fill:"<<fillColor_;

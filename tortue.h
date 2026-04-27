@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 #include "position.h"
-#include "svgdrawer.h"
+#include "Svgdrawer.h"
 using namespace std;
 
 class Tortue {

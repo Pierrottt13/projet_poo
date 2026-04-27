@@ -21,7 +21,7 @@ class SvgDrawer
   void closeTag(string tagName);
   void emptyTag(string tagName,string attribute="");
   void tag(string tagName,string attribute="",string content="");
-  string setAttribStyle() const;
+  string setAttribStyle() ;
   void jscriptRefreshTag();
 
 public:

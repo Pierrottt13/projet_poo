@@ -1,27 +1,26 @@
 #ifndef MENU_H
 #define MENU_H
+using namespace std;
 
 #include <string>
 #include <vector>
-#include "drawing.h"
 #include "tortue.h"
-#include "SvgDrawer.h"
+#include "instruction.h"
 
 class SvgDrawer;
 
 class Menu
 {
-  Drawing drawing_;
-  std::vector<std::string> mainMenu_;
-  std::vector<std::string> shapeMenu_;
+  Tortue tortue_;
+  vector<string> mainMenu_;
+  vector<string> shapeMenu_;
+
 public:
   Menu(SvgDrawer *drawer);
-  void print(const std::vector<std::string> &menu) const;
+  void print(const vector<string> &menu) const;
   void execute();
-  unsigned promptUser(unsigned nbOptions) const;
   void newDrawing();
-  void addShape();
-  void removeShape();
+  void clear();
 };
 
 #endif // MENU_H
